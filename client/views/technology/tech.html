@@ -1,0 +1,8 @@
+<div>
+	<h1>{{techs.length}} technologies you know so far!!!!</h1>
+	<ul>
+		<li ng-repeat="tech in techs">{{tech.name}}</li>
+	</ul>
+	<input type="text" name="techName" placeholder="Add a technology..." ng-model="techName">
+	<button ng-click="addTech(techName)">ADD</button>
+</div>
